@@ -16,5 +16,7 @@ describe("should testing Home component", () => {
 
     const mockCallback = jest.fn((x) => x + x);
     forEach([0, 1, 2], mockCallback);
+    expect(mockCallback.mock.calls.length).toBe(3)
+    expect(mockCallback.mock.results[1].value).toBe(2)
   });
 });
