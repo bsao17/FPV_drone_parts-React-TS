@@ -18,7 +18,7 @@ class Views3D extends Component<props, state> {
       <div>
         <video id={styles.antenna} controls={this.state.controlVideo}>
           <source
-            src={"./assets/videos/Antenna-FPV_2022.mp4"}
+            src={"C:\Users\decli\Desktop\React-App\Alltech_job\my-app\public\assets\video\Antenna-FPV_2022.mp4"}
             type={"video/mp4"}
           />
         </video>
