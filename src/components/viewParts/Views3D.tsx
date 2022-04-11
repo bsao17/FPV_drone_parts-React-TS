@@ -1,26 +1,16 @@
-import React, { Component } from "react";
-import styles from "./views3D.module.scss";
+import React from "react"
+import styles from "./views3D.module.scss"
 
 interface props {}
-interface state {
-  controlVideo: boolean;
-}
 
-class Views3D extends Component<props, state> {
-  constructor(props: props) {
-    super(props);
-    this.state = {
-      controlVideo: true,
-    };
-  }
+
+class Views3D extends React.Component<props> {
+  
   render() {
     return (
       <div>
-        <video id={styles.antenna} controls={this.state.controlVideo}>
-          <source
-            src={"C:\Users\decli\Desktop\React-App\Alltech_job\my-app\public\assets\video\Antenna-FPV_2022.mp4"}
-            type={"video/mp4"}
-          />
+        <video id={styles.antenna} controls>
+          <source src={"./assets/video/Antenna-FPV_2022.mp4"} type={"video/mp4"} />
         </video>
       </div>
     );
