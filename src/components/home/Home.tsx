@@ -9,21 +9,18 @@ const NightModeButton = styled.button`
   background-color: #000;
   border-radius: 5px;
   border: inset gray 5px;
+  margin-top: 2%;
 `
 const DayModeButton = styled.button`
   background-color: #fff;
   border-radius: 5px;
   border: inset yellow 5px;
+  margin-top: 2%;
 `
-
-const ref: React.RefObject<any> = React.createRef();
-
 
 function Home(props: props) {
     const [title] = useState<String>("My new Hobby")
     const [theme, setTheme] = useState(true)
-
-    // const darkTheme = useContext()
 
     function darkMode() {
         setTheme(!theme)
@@ -31,7 +28,7 @@ function Home(props: props) {
 
     return (
         <div className={styles.container}>
-            <h1 ref={ref} className={styles.title}>
+            <h1 className={styles.title}>
                 <span>{title}</span>
                 <br/>
                 {theme ? (<NightModeButton className={theme ? "btn btn-dark" : "btn btn-light"} onClick={darkMode}>
