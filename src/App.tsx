@@ -3,14 +3,25 @@ import "./App.scss";
 import Home from "./components/home/Home";
 import Views3D from "./components/viewParts/Views3D";
 
-const myContext = React.createContext(false);
+const themes = {
+  light: {
+    foreground: "#000000",
+    background: "#eeeeee"
+  },
+  dark: {
+    foreground: "#ffffff",
+    background: "#222222"
+  }
+};
+
+const MyContext = React.createContext(themes.light);
 
 function App() {
   return (
-    <div className="App">
+    <MyContext.Provider value={themes.light}>
       <Home />
       <Views3D />
-    </div>
+    </MyContext.Provider>
   );
 }
 
