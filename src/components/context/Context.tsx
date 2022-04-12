@@ -1,19 +1,18 @@
-import React, {useState, createContext, ReactChildren} from "react"
+import React, {useState, createContext, ReactChildren, ReactElement} from "react"
 
-export const ThemeContext = createContext("")
-
+export const ThemeContext = createContext<object>({})
 interface props {
-    children: ReactChildren
+    children: ReactElement
 }
 
 export default function Context({children}: props){
-    const [theme, setTheme] = useState('light')
-    const toggleTheme = () => {
+    const [theme, setTheme] = useState<Object>('light')
+    const toggleTheme: Function = () => {
         setTheme(theme === 'light' ? 'dark' : 'light')
     }
 
     return(
-        <ThemeContext.Provider value={theme}>
+        <ThemeContext.Provider value={{theme, toggleTheme}}>
             {children}
         </ThemeContext.Provider>
     )
