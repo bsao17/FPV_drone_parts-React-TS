@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import styles from "./home.module.scss";
 import styled from "styled-components";
+import {ThemeContext} from "../context/Context";
 
 interface props {
 }
@@ -21,6 +22,7 @@ const DayModeButton = styled.button`
 function Home(props: props) {
     const [title] = useState<String>("My new Hobby")
     const [theme, setTheme] = useState(true)
+    const context = React.useContext(ThemeContext);
 
     function darkMode() {
         setTheme(!theme)
