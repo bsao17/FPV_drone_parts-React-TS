@@ -22,10 +22,7 @@ const DayModeButton = styled.button`
 
 function Home(props: props) {
     const [title] = useState<String>("My new Hobby")
-    // const [theme, setTheme] = useState(true)
     const context = useContext(ThemeContext);
-
-
     return (
         <div id={styles.container}>
             <img className={styles.banner} src={banner} alt="Banner Mountain"/>

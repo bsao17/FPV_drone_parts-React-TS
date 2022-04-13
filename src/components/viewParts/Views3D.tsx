@@ -2,11 +2,7 @@ import React from "react"
 import styles from "./views3D.module.scss"
 import support from "./images/FPV-support_2022.png"
 
-interface props {
-}
-
-class Views3D extends React.Component<props> {
-
+class Views3D extends React.Component {
     render() {
         return (
             <div className={styles.container}>
@@ -15,8 +11,9 @@ class Views3D extends React.Component<props> {
         </video> */}
                 <img className={styles.image} src={support} alt="FPV-support"/>
                 <div className={styles.buttons}>
-                    <a className={"btn btn-success me-3"} href={""} >Dounwload</a>
-                    <a className={"btn btn-primary"} href="../../html/Support-FPV_2022.html" target={"_blank"}>3D view</a>
+                    <a className={"btn btn-success me-3"} href={""}>Dounwload</a>
+                    <a className={"btn btn-primary"} href="../../html/Support-FPV_2022.html" target={"_blank"}>3D
+                        view</a>
                 </div>
             </div>
         );

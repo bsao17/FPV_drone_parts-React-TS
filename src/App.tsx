@@ -15,6 +15,7 @@ const GlobalStyleDark = styled.body`
   margin: 0;
   padding: 0;
 `
+
 function App() {
     const context = useContext(ThemeContext)
     return (
