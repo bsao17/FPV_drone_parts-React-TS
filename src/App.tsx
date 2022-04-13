@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import Home from "./components/home/Home";
 import Views3D from "./components/viewParts/Views3D";
+import banner from "assets/images/Mountains_Banner.jpg"
 
 const themes = {
   light: {
@@ -14,15 +15,16 @@ const themes = {
   }
 };
 
-const MyContext = React.createContext(themes.light);
 
 function App() {
   return (
-    <MyContext.Provider value={themes.light}>
+    <>
       <Home />
       <Views3D />
-    </MyContext.Provider>
+    </>
+
   );
 }
 
 export default App;
+

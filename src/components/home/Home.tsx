@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styles from "./home.module.scss";
 import styled from "styled-components";
 import {ThemeContext} from "../context/Context";
+import banner from "./Mountains_Banner.jpg"
 
 interface props {
 }
@@ -30,6 +31,7 @@ function Home(props: props) {
 
     return (
         <div className={styles.container}>
+            <img className={styles.banner} src={banner} alt="Banner Mountain"/>
             <h1 className={styles.title}>
                 <span>{title}</span>
                 <br/>
