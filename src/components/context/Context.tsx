@@ -1,6 +1,7 @@
-import React, {useState, createContext, ReactChildren, ReactElement} from "react"
+import React, {useState, createContext, ReactElement} from "react"
 
 export const ThemeContext = createContext<object>({})
+
 interface props {
     children: ReactElement
 }
