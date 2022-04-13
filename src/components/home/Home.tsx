@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import styles from "./home.module.scss";
 import styled from "styled-components";
 import {ThemeContext} from "../context/Context";
@@ -22,23 +22,24 @@ const DayModeButton = styled.button`
 
 function Home(props: props) {
     const [title] = useState<String>("My new Hobby")
-    const [theme, setTheme] = useState(true)
-    const context = React.useContext(ThemeContext);
+    // const [theme, setTheme] = useState(true)
+    const context = useContext(ThemeContext);
 
-    function darkMode() {
-        setTheme(!theme)
-    }
 
     return (
-        <div className={styles.container}>
+        <div id={styles.container}>
             <img className={styles.banner} src={banner} alt="Banner Mountain"/>
             <h1 className={styles.title}>
                 <span>{title}</span>
                 <br/>
-                {theme ? (<NightModeButton className={theme ? "btn btn-dark" : "btn btn-light"} onClick={darkMode}>
-                    <h2>{theme ? "🌚" : "🌞"}</h2></NightModeButton>) : (
-                    <DayModeButton className={theme ? "btn btn-dark" : "btn btn-light"} onClick={darkMode}>
-                        <h2>{theme ? "🌚" : "🌞"}</h2></DayModeButton>)}
+                {/*@ts-ignore*/}
+                {context.theme ? (<NightModeButton className={context.theme ? `btn btn-dark` : "btn btn-light"} onClick={context.toggleTheme}>
+                    {/*@ts-ignore*/}
+                    <h2>{context.theme ? "🌚" : "🌞"}</h2></NightModeButton>) : (
+                    //@ts-ignore*
+                    <DayModeButton className={context.theme ? "btn btn-dark" : "btn btn-light"} onClick={context.toggleTheme}>
+                        {/*@ts-ignore*/}
+                        <h2>{context.theme ? "🌚" : "🌞"}</h2></DayModeButton>)}
             </h1>
         </div>
     );

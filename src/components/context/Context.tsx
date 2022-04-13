@@ -7,9 +7,9 @@ interface props {
 }
 
 export default function Context({children}: props){
-    const [theme, setTheme] = useState<Object>('light')
+    const [theme, setTheme] = useState<boolean>(true)
     const toggleTheme: Function = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light')
+        setTheme(!theme)
     }
 
     return(
