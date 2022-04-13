@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/FP_drone_parts-React-TS/static/css/main.7b0da0e4.css",
-    "main.js": "/FP_drone_parts-React-TS/static/js/main.e2dadf0f.js",
-    "static/js/787.28cb0dcd.chunk.js": "/FP_drone_parts-React-TS/static/js/787.28cb0dcd.chunk.js",
-    "static/media/FPV-support_2022.png": "/FP_drone_parts-React-TS/static/media/FPV-support_2022.1a927a6fd526500cf86c.png",
-    "index.html": "/FP_drone_parts-React-TS/index.html",
-    "main.7b0da0e4.css.map": "/FP_drone_parts-React-TS/static/css/main.7b0da0e4.css.map",
-    "main.e2dadf0f.js.map": "/FP_drone_parts-React-TS/static/js/main.e2dadf0f.js.map",
-    "787.28cb0dcd.chunk.js.map": "/FP_drone_parts-React-TS/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "./static/css/main.6039767b.css",
+    "main.js": "./static/js/main.004c6f9d.js",
+    "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
+    "static/media/Mountains_Banner.jpg": "./static/media/Mountains_Banner.30b5d0e684be78f41d25.jpg",
+    "static/media/FPV-support_2022.png": "./static/media/FPV-support_2022.1a927a6fd526500cf86c.png",
+    "index.html": "./index.html",
+    "main.6039767b.css.map": "./static/css/main.6039767b.css.map",
+    "main.004c6f9d.js.map": "./static/js/main.004c6f9d.js.map",
+    "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b0da0e4.css",
-    "static/js/main.e2dadf0f.js"
+    "static/css/main.6039767b.css",
+    "static/js/main.004c6f9d.js"
   ]
 }
