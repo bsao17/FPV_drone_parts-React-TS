@@ -11,7 +11,7 @@ class Views3D extends React.Component {
         </video> */}
                 <img className={styles.image} src={support} alt="FPV-support"/>
                 <div className={styles.buttons}>
-                    <a className={"btn btn-success me-3"} href={""}>Dounwload</a>
+                    <a className={"btn btn-success me-3"} download={"cura GoPro modele (ver. 1.0.0)"} href={"./fileSTL/FPV-support.stl"}>Donwload</a>
                     <a className={"btn btn-primary"} href="../../html/Support-FPV_2022.html" target={"_blank"}>3D
                         view</a>
                 </div>
