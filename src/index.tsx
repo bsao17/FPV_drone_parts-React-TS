@@ -12,5 +12,4 @@ root.render(
     </Context>
 );
 
-
 reportWebVitals(console.log);

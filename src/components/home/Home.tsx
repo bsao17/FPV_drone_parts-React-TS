@@ -2,7 +2,7 @@ import React, {useState, useContext} from "react";
 import styles from "./home.module.scss";
 import styled from "styled-components";
 import {ThemeContext} from "../context/Context";
-import banner from "./Mountains_Banner.jpg"
+import banner from "./images/Mountains_Banner.jpg"
 
 interface props {
 }

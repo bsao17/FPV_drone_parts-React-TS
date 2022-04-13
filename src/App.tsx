@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from "react";
+import React, {useContext} from "react";
 import "./App.scss";
 import Home from "./components/home/Home";
 import Views3D from "./components/viewParts/Views3D";
@@ -6,7 +6,7 @@ import {ThemeContext} from "./components/context/Context";
 import styled from "styled-components";
 
 const GlobalStyleLight = styled.body`
-  background-color: #FFF;
+  background-color: #B2B2B2;
   margin: 0;
   padding: 0;
 `
@@ -19,18 +19,17 @@ function App() {
     const context = useContext(ThemeContext)
     return (
         //@ts-ignore
-        context.theme ? (<GlobalStyleLight>
-                <Home />
-                <Views3D />
+        context.theme ? (
+            <GlobalStyleLight>
+                <Home/>
+                <Views3D/>
             </GlobalStyleLight>) : (
-                <GlobalStyleDark>
-                    <Home />
-                    <Views3D />
-                </GlobalStyleDark>
-            )
-
-
-  );
+            <GlobalStyleDark>
+                <Home/>
+                <Views3D/>
+            </GlobalStyleDark>
+        )
+    );
 }
 
 export default App;
