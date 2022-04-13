@@ -11,5 +11,4 @@ describe("should test home component", ()=>{
         // eslint-disable-next-line jest/valid-expect
         expect(screen.getByText(/my new hobby/i))
     })
-
 })

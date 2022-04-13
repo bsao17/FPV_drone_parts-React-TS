@@ -1,6 +1,11 @@
 import React, {createContext, ReactElement, useState} from "react"
 
-export const ThemeContext = createContext<object>({})
+interface appContextInterface {
+    theme: boolean,
+    toggleTheme: Function
+}
+
+export const ThemeContext = createContext<appContextInterface | null>(null)
 
 interface props {
     children: ReactElement

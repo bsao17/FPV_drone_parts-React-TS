@@ -19,7 +19,6 @@ const GlobalStyleDark = styled.body`
 function App() {
     const context = useContext(ThemeContext)
     return (
-        //@ts-ignore
         context.theme ? (
             <GlobalStyleLight>
                 <Home/>

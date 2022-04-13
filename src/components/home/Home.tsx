@@ -1,4 +1,4 @@
-import React, {useState, useContext} from "react";
+import React, {useContext, useState} from "react";
 import styles from "./home.module.scss";
 import styled from "styled-components";
 import {ThemeContext} from "../context/Context";
@@ -29,13 +29,13 @@ function Home(props: props) {
             <h1 className={styles.title}>
                 <span>{title}</span>
                 <br/>
-                {/*@ts-ignore*/}
-                {context.theme ? (<NightModeButton className={context.theme ? `btn btn-dark` : "btn btn-light"} onClick={context.toggleTheme}>
-                    {/*@ts-ignore*/}
+                {context.theme ? (<NightModeButton className={context.theme ? `btn btn-dark` : "btn btn-light"}
+                                                   //@ts-ignore
+                                                   onClick={context.toggleTheme}>
                     <h2>{context.theme ? "🌚" : "🌞"}</h2></NightModeButton>) : (
-                    //@ts-ignore*
-                    <DayModeButton className={context.theme ? "btn btn-dark" : "btn btn-light"} onClick={context.toggleTheme}>
-                        {/*@ts-ignore*/}
+                    <DayModeButton className={context.theme ? "btn btn-dark" : "btn btn-light"}
+                                   //@ts-ignore
+                                   onClick={context.toggleTheme}>
                         <h2>{context.theme ? "🌚" : "🌞"}</h2></DayModeButton>)}
             </h1>
         </div>
