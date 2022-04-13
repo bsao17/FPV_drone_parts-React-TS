@@ -1,6 +1,17 @@
+
+.buttons {
+  margin: 10px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .image {
   width: 60%;
   height: 20%;
-  margin: 400px auto;
+  margin-top: 400px;
   display: block;
 }

@@ -3,18 +3,32 @@ import "./App.scss";
 import Home from "./components/home/Home";
 import Views3D from "./components/viewParts/Views3D";
 import {ThemeContext} from "./components/context/Context";
+import styled from "styled-components";
 
-
+const GlobalStyleLight = styled.body`
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+`
+const GlobalStyleDark = styled.body`
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+`
 function App() {
     const context = useContext(ThemeContext)
-    //@ts-ignore
-    console.log(context.theme)
-
     return (
-    <>
-      <Home />
-      <Views3D />
-    </>
+        //@ts-ignore
+        context.theme ? (<GlobalStyleLight>
+                <Home />
+                <Views3D />
+            </GlobalStyleLight>) : (
+                <GlobalStyleDark>
+                    <Home />
+                    <Views3D />
+                </GlobalStyleDark>
+            )
+
 
   );
 }
