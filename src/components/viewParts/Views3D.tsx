@@ -9,12 +9,16 @@ class Views3D extends React.Component {
                 {/* <video id={styles.antenna} controls>
           <source src={"./assets/video/Antenna-FPV_2022.mp4"} type={"video/mp4"} />
         </video> */}
-                <img className={styles.image} src={support} alt="FPV-support"/>
-                <div className={styles.buttons}>
-                    <a className={"btn btn-success me-3"} download={"cura GoPro modele (ver. 1.0.0)"} href={"./fileSTL/FPV-support.stl"}>Donwload</a>
-                    <a className={"btn btn-primary"} href="../../html/Support-FPV_2022.html" target={"_blank"}>3D
-                        view</a>
+                <div className={"d-flex flex-column justify-content-center align-items-center "}>
+                    <img id={styles.image} className={"card border-3 border-light mb-3"} src={support} alt="FPV-support"/>
+                    <h3>Support GoPro</h3>
+                    <div className={styles.buttons}>
+                        <a className={"btn btn-success me-3"} download={"cura GoPro modele (ver. 1.0.0)"} href={"./fileSTL/FPV-support.stl"}>Donwload</a>
+                        <a className={"btn btn-primary"} href="../../html/Support-FPV_2022.html" target={"_blank"}>3D
+                            view</a>
+                    </div>
                 </div>
+                <hr id={styles.separation}/>
             </div>
         );
     }

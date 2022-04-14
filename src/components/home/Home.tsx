@@ -4,8 +4,6 @@ import styled from "styled-components";
 import {ThemeContext} from "../context/Context";
 import banner from "./images/Mountains_Banner.jpg"
 
-interface props {
-}
 
 const NightModeButton = styled.button`
   background-color: #000;
@@ -20,7 +18,7 @@ const DayModeButton = styled.button`
   margin-top: 2%;
 `
 
-function Home(props: props) {
+function Home() {
     const [title] = useState<String>("My new Hobby")
     const context = useContext(ThemeContext);
     return (
