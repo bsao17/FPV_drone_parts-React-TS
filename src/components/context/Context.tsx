@@ -11,9 +11,13 @@ interface props {
     children: ReactElement
 }
 
+interface mouseEventInt {
+    onClick: Function
+}
+
 export default function Context({children}: props) {
     const [theme, setTheme] = useState<boolean>(true)
-    const toggleTheme: Function = () => {
+    const toggleTheme = () => {   
         setTheme(!theme)
     }
     return (
