@@ -22,11 +22,11 @@ function App() {
     return (
         context.theme ? (
             <GlobalStyleLight>
-                <Home/>
+                <Home myTitle={"My favourite Hobby"}/>
                 <Views3D/>
             </GlobalStyleLight>) : (
             <GlobalStyleDark>
-                <Home/>
+                <Home myTitle={"My drone FPV Site"}/>
                 <Views3D/>
             </GlobalStyleDark>
         )

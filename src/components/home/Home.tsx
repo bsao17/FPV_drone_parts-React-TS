@@ -17,9 +17,13 @@ const DayModeButton = styled.button`
   margin-top: 2%;
 `;
 
-function Home() {
-  const [title] = useState<String>("My new Hobby");
-  const context: any = useContext(ThemeContext);
+interface props {
+  myTitle: string;
+}
+
+function Home({myTitle}: props) {
+  const [title] = useState<String>(myTitle);
+  const context: any = useContext(ThemeContext); 
   return (
     <div id={styles.container}>
       <img className={styles.banner} src={banner} alt="Banner Mountain" />

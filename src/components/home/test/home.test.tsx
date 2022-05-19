@@ -5,7 +5,7 @@ import Home from "../Home";
 describe("should test home component", ()=>{
     beforeEach(()=>{
         // eslint-disable-next-line testing-library/no-render-in-setup
-        render(<Home/>)
+        render(<Home myTitle={"test"}/>)
     })
     it("should verify title in component", ()=>{
         // eslint-disable-next-line jest/valid-expect

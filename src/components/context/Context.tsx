@@ -1,4 +1,4 @@
-import React, {createContext, ReactElement, useState} from "react"
+import React, {createContext, ReactElement, useState, useCallback} from "react"
 
 interface appContextInterface {
     theme: boolean,
@@ -9,10 +9,6 @@ export const ThemeContext = createContext<appContextInterface | null>(null)
 
 interface props {
     children: ReactElement
-}
-
-interface mouseEventInt {
-    onClick: Function
 }
 
 export default function Context({children}: props) {
