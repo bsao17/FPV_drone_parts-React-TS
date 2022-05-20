@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect} from "react";
 import "./App.scss";
 import Home from "./components/home/Home";
 import Views3D from "./components/viewParts/Views3D";
@@ -19,6 +19,9 @@ const GlobalStyleDark = styled.body`
 
 function App() {
     const context = useContext(ThemeContext)
+
+    useEffect(()=>{}, [context.theme])
+
     return (
         context.theme ? (
             <GlobalStyleLight>

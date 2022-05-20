@@ -25,6 +25,7 @@ function Home({myTitle}: props) {
   const [title] = useState<String>(myTitle);
   const context: any = useContext(ThemeContext); 
   return (
+      // Picture banner with title and dark button
     <div id={styles.container}>
       <img className={styles.banner} src={banner} alt="Banner Mountain" />
       <h1 className={styles.title}>
