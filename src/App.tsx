@@ -4,6 +4,8 @@ import Home from "./components/home/Home";
 import Views3D from "./components/viewParts/Views3D";
 import {ThemeContext} from "./components/context/Context";
 import styled from "styled-components";
+import Navigation from "./components/navigation/Navigation";
+import DarkButton from "./components/darkButton/DarkButton";
 
 const GlobalStyleLight = styled.body`
   background-color: #B2B2B2;
@@ -25,12 +27,16 @@ function App() {
     return (
         context.theme ? (
             <GlobalStyleLight>
-                <Home myTitle={"My favourite Hobby"}/>
+                <Home myTitle={"Home"}/>
+                <Navigation/>
                 <Views3D/>
+                <DarkButton/>
             </GlobalStyleLight>) : (
             <GlobalStyleDark>
-                <Home myTitle={"My drone FPV Site"}/>
+                <Home myTitle={"Home"}/>
+                <Navigation/>
                 <Views3D/>
+                <DarkButton/>
             </GlobalStyleDark>
         )
     );
