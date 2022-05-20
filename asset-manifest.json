@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.ee396278.css",
-    "main.js": "./static/js/main.c622170a.js",
-    "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
-    "static/media/Mountains_Banner.jpg": "./static/media/Mountains_Banner.30b5d0e684be78f41d25.jpg",
-    "static/media/FPV2-support_2022.png": "./static/media/FPV2-support_2022.89abe232738e6fac424d.png",
-    "static/media/FPV-support_2022.png": "./static/media/FPV-support_2022.c4450706459beb171008.png",
-    "index.html": "./index.html",
-    "main.ee396278.css.map": "./static/css/main.ee396278.css.map",
-    "main.c622170a.js.map": "./static/js/main.c622170a.js.map",
-    "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/FPV_drone_parts-React-TS/static/css/main.ee396278.css",
+    "main.js": "/FPV_drone_parts-React-TS/static/js/main.c063d3a8.js",
+    "static/js/787.28cb0dcd.chunk.js": "/FPV_drone_parts-React-TS/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Mountains_Banner.jpg": "/FPV_drone_parts-React-TS/static/media/Mountains_Banner.30b5d0e684be78f41d25.jpg",
+    "static/media/FPV2-support_2022.png": "/FPV_drone_parts-React-TS/static/media/FPV2-support_2022.89abe232738e6fac424d.png",
+    "static/media/FPV-support_2022.png": "/FPV_drone_parts-React-TS/static/media/FPV-support_2022.0dd1b4ebfc1140df5815.png",
+    "index.html": "/FPV_drone_parts-React-TS/index.html",
+    "main.ee396278.css.map": "/FPV_drone_parts-React-TS/static/css/main.ee396278.css.map",
+    "main.c063d3a8.js.map": "/FPV_drone_parts-React-TS/static/js/main.c063d3a8.js.map",
+    "787.28cb0dcd.chunk.js.map": "/FPV_drone_parts-React-TS/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee396278.css",
-    "static/js/main.c622170a.js"
+    "static/js/main.c063d3a8.js"
   ]
 }
