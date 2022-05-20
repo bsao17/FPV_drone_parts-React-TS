@@ -8,7 +8,7 @@ class Views3D extends React.Component {
             <div className={styles.container}>
                 <div className={"d-flex flex-column justify-content-center align-items-center "}>
                     <img id={styles.image} src={support} alt="FPV-support"/>
-                    <h3>Support GoPro</h3>
+                    <h3>GoPro Support</h3>
                     <div className={styles.buttons}>
                         <a className={"btn btn-success me-3"} download={"cura GoPro modele (ver. 1.0.0)"}
                            href={"./fileSTL/FPV-support.stl"}>Donwload</a>
@@ -16,6 +16,15 @@ class Views3D extends React.Component {
                     </div>
                 </div>
                 <hr id={styles.separation}/>
+                <div className={"d-flex flex-column justify-content-center align-items-center "}>
+                    <img id={styles.image} src={support} alt="FPV-support"/>
+                    <h3>Antenna Support</h3>
+                    <div className={styles.buttons}>
+                        <a className={"btn btn-success me-3"} download={"cura GoPro modele (ver. 1.0.0)"}
+                           href={"./fileSTL/FPV-support.stl"}>Donwload</a>
+                        <a href={"https://bsao17.github.io/FPV_drone_parts/FPV-support.html"} className={"btn btn-primary"} >3D View</a>
+                    </div>
+                </div>
             </div>
         );
     }

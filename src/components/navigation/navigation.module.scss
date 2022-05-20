@@ -1,4 +1,6 @@
-
+.container {
+    width: 75%;
+}
 
 #list {
     display: flex;
@@ -8,6 +10,23 @@
     align-items: center;
     font-family: 'Lobster', cursive;
     font-size: 1.5rem;
+    width: 75%;
+    margin: auto auto 100px;
+    border: black solid 1px;
+    border-radius: 5px;
+}
+#listDark {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    width: 75%;
+    margin: auto auto 100px;
+    border: white solid 1px;
+    border-radius: 5px;
 }
 a {
     text-decoration: none;

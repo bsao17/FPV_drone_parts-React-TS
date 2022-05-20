@@ -7,7 +7,7 @@ export default function Navigation() {
     const context = useContext(ThemeContext)
     return (
         <div id={styles.container}>
-            <ul id={styles.list}>
+            <ul id={context.theme ? styles.list : styles.listDark}>
                 <li className={styles.itemList}><Link style={context.theme ? {color: "black"} : {color: "white"}}
                                                       to={"/"}>Home</Link></li>
                 <li className={styles.itemList}><Link style={context.theme ? {color: "black"} : {color: "white"}}
