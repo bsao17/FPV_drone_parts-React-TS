@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.a63c63fe.css",
-    "main.js": "./static/js/main.48d950e6.js",
+    "main.css": "./static/css/main.ee396278.css",
+    "main.js": "./static/js/main.c622170a.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/Mountains_Banner.jpg": "./static/media/Mountains_Banner.30b5d0e684be78f41d25.jpg",
-    "static/media/FPV-support_2022.png": "./static/media/FPV-support_2022.1a927a6fd526500cf86c.png",
+    "static/media/FPV2-support_2022.png": "./static/media/FPV2-support_2022.89abe232738e6fac424d.png",
+    "static/media/FPV-support_2022.png": "./static/media/FPV-support_2022.c4450706459beb171008.png",
     "index.html": "./index.html",
-    "main.a63c63fe.css.map": "./static/css/main.a63c63fe.css.map",
-    "main.48d950e6.js.map": "./static/js/main.48d950e6.js.map",
+    "main.ee396278.css.map": "./static/css/main.ee396278.css.map",
+    "main.c622170a.js.map": "./static/js/main.c622170a.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a63c63fe.css",
-    "static/js/main.48d950e6.js"
+    "static/css/main.ee396278.css",
+    "static/js/main.c622170a.js"
   ]
 }
