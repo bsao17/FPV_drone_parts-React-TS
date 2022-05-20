@@ -1,7 +1,5 @@
 import { useContext, useState } from "react";
 import styles from "./home.module.scss";
-import styled from "styled-components";
-import { ThemeContext } from "../context/Context";
 import banner from "./images/Mountains_Banner.jpg";
 
 
@@ -11,7 +9,6 @@ interface props {
 
 function Home({myTitle}: props) {
   const [title] = useState<String>(myTitle);
-  const context: any = useContext(ThemeContext); 
   return (
       // Picture banner with title and dark button
     <div id={styles.container}>
