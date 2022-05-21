@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useContext} from "react";
-import { ThemeContext} from "../context/Context";
+import {DarkModeContext} from "../context/Context";
 import styles from "./darkButton.module.scss"
 import styled from "styled-components";
 
@@ -27,8 +27,8 @@ const DayModeButton = styled.button`
 `;
 
 
-export default function DarkButton(){
-    const context = useContext(ThemeContext)
+export default function DarkButton() {
+    const context = useContext(DarkModeContext)
     return (
         <div className={styles.container}>
             {context.theme ? (

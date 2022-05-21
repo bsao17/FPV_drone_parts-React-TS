@@ -2,7 +2,7 @@ import React, {useContext, useEffect} from "react";
 import "./App.scss";
 import Home from "./components/home/Home";
 import Views3D from "./components/viewParts/Views3D";
-import {ThemeContext} from "./components/context/Context";
+import {DarkModeContext} from "./components/context/Context";
 import styled from "styled-components";
 import Navigation from "./components/navigation/Navigation";
 import DarkButton from "./components/darkButton/DarkButton";
@@ -20,9 +20,10 @@ const GlobalStyleDark = styled.body`
 `
 
 function App() {
-    const context = useContext(ThemeContext)
+    const context = useContext(DarkModeContext)
 
-    useEffect(()=>{}, [context.theme])
+    useEffect(() => {
+    }, [context.theme])
 
     return (
         context.theme ? (
@@ -30,13 +31,11 @@ function App() {
                 <Home myTitle={"Home"}/>
                 <Navigation/>
                 <Views3D/>
-                <DarkButton/>
             </GlobalStyleLight>) : (
             <GlobalStyleDark>
                 <Home myTitle={"Home"}/>
                 <Navigation/>
                 <Views3D/>
-                <DarkButton/>
             </GlobalStyleDark>
         )
     );

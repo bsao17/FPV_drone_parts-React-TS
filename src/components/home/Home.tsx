@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import styles from "./home.module.scss";
 import banner from "./images/Mountains_Banner.jpg";
+import DarkButton from "../darkButton/DarkButton";
 
 
 interface props {
@@ -16,6 +17,7 @@ function Home({myTitle}: props) {
       <h1 className={styles.title}>
         <span>{title}</span>
       </h1>
+        <DarkButton/>
     </div>
   );
 }

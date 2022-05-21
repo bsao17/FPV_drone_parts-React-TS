@@ -5,7 +5,7 @@ interface appContextInterface {
     toggleTheme: Function
 }
 
-export const ThemeContext = createContext<appContextInterface | null>(null)
+export const DarkModeContext = createContext<appContextInterface | null>(null)
 
 interface props {
     children: ReactElement
@@ -13,12 +13,12 @@ interface props {
 
 export default function Context({children}: props) {
     const [theme, setTheme] = useState<boolean>(true)
-    const toggleTheme = () => {   
+    const toggleTheme = () => {
         setTheme(!theme)
     }
     return (
-        <ThemeContext.Provider value={{theme, toggleTheme}}>
+        <DarkModeContext.Provider value={{theme, toggleTheme}}>
             {children}
-        </ThemeContext.Provider>
+        </DarkModeContext.Provider>
     )
 }
