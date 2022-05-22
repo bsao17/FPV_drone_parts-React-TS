@@ -9,7 +9,6 @@ const Video = () => {
     const context = useContext(DarkModeContext)
     return (
         <div className={styles.container}>
-            <Home myTitle={"Video"}/>
             <h1>Video</h1>
             <DarkButton/>
         </div>

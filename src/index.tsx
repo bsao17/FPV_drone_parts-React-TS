@@ -10,13 +10,7 @@ const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container as HTMLElement);
 root.render(
     <Context>
-        <BrowserRouter>
-            <Routes>
-                <Route path={"/"} element={<App/>}/>
-                <Route path={"/video"} element={<Video/>}/>
-                <Route path={"/signin"} element={<Signin/>}/>
-            </Routes>
-        </BrowserRouter>
+        <App/>
     </Context>
 );
 

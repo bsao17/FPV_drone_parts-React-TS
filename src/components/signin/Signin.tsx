@@ -6,7 +6,6 @@ import DarkButton from "../darkButton/DarkButton";
 const Signin = () => {
     return (
         <div className={styles.container}>
-            <Home myTitle={"Signin"}/>
             <h1>Connection</h1>
             <DarkButton/>
         </div>

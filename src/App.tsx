@@ -6,13 +6,12 @@ import {DarkModeContext} from "./components/context/Context";
 import styled from "styled-components";
 import Navigation from "./components/navigation/Navigation";
 import DarkButton from "./components/darkButton/DarkButton";
+import Video from "./components/video/Video";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Signin from "./components/signin/Signin";
 
-const GlobalStyleLight = styled.body`
-  background-color: #B2B2B2;
-  margin: 0;
-  padding: 0;
-`
-const GlobalStyleDark = styled.body`
+
+const GlobalStyleDark = styled.div`
   background-color: #000;
   color: white;
   margin: 0;
@@ -20,24 +19,14 @@ const GlobalStyleDark = styled.body`
 `
 
 function App() {
-    const context = useContext(DarkModeContext)
-
-    useEffect(() => {
-    }, [context.theme])
-
     return (
-        context.theme ? (
-            <GlobalStyleLight>
-                <Home myTitle={"Home"}/>
-                <Navigation/>
-                <Views3D/>
-            </GlobalStyleLight>) : (
-            <GlobalStyleDark>
-                <Home myTitle={"Home"}/>
-                <Navigation/>
-                <Views3D/>
-            </GlobalStyleDark>
-        )
+        <BrowserRouter>
+            <Routes>
+                <Route path={"/"} element={<Home/>}/>
+                <Route path={"/video"} element={<Video/>}/>
+                <Route path={"/signin"} element={<Signin/>}/>
+            </Routes>
+        </BrowserRouter>
     );
 }
 

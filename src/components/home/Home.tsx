@@ -2,14 +2,16 @@ import { useContext, useState } from "react";
 import styles from "./home.module.scss";
 import banner from "./images/Mountains_Banner.jpg";
 import DarkButton from "../darkButton/DarkButton";
+import Views3D from "../viewParts/Views3D";
+import Navigation from "../navigation/Navigation";
 
 
 interface props {
   myTitle: string;
 }
 
-function Home({myTitle}: props) {
-  const [title] = useState<String>(myTitle);
+function Home() {
+  const [title] = useState<String>("Home");
   return (
       // Picture banner with title and dark button
     <div id={styles.container}>
@@ -17,6 +19,8 @@ function Home({myTitle}: props) {
       <h1 className={styles.title}>
         <span>{title}</span>
       </h1>
+        <Navigation/>
+        <Views3D/>
         <DarkButton/>
     </div>
   );
