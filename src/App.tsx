@@ -1,14 +1,11 @@
 import React, {useContext, useEffect} from "react";
 import "./App.scss";
-import Home from "./components/home/Home";
-import Views3D from "./components/viewParts/Views3D";
-import {DarkModeContext} from "./components/context/Context";
-import styled from "styled-components";
-import Navigation from "./components/navigation/Navigation";
-import DarkButton from "./components/darkButton/DarkButton";
 import Video from "./components/video/Video";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Signin from "./components/signin/Signin";
+import styled from "styled-components";
+import Home from "./components/home/Home";
+import DarkButton from "./components/darkButton/DarkButton";
 
 
 const GlobalStyleDark = styled.div`
@@ -26,6 +23,7 @@ function App() {
                 <Route path={"/video"} element={<Video/>}/>
                 <Route path={"/signin"} element={<Signin/>}/>
             </Routes>
+            <DarkButton/>
         </BrowserRouter>
     );
 }
