@@ -11,6 +11,7 @@ function Views3D() {
                 {/* Part One*/}
                 <div className={"d-flex flex-column justify-content-center align-items-center "}>
                     <img className={"mb-3"} id={context.theme ? styles.image : styles.imageDark} src={support} alt="FPV-support"/>
+                    <hr className={styles.separation}/>
                     <h3>Cam Support</h3>
                     <div className={styles.buttons}>
                         <a className={"btn btn-success me-3"} download={"cura GoPro modele (ver. 1.0.0)"}
@@ -18,12 +19,16 @@ function Views3D() {
                         <a href={"https://bsao17.github.io/FPV_drone_parts/FPV-support.html"}
                            className={"btn btn-primary"}>3D View</a>
                     </div>
+                    <hr className={styles.separationLong}/>
                 </div>
-                <hr id={styles.separation}/>
+
+                <hr/>
+                <br/>
 
                 {/* Part Two*/}
                 <div className={"d-flex flex-column justify-content-center align-items-center "}>
                     <img className={"mb-3"} id={context.theme ? styles.image : styles.imageDark} src={support2} alt="FPV-support"/>
+                    <hr className={styles.separation}/>
                     <h3>GoPro Support</h3>
                     <div className={styles.buttons}>
                         <a className={"btn btn-success me-3"} download={"cura GoPro modele (ver. 1.0.0)"}
@@ -32,6 +37,7 @@ function Views3D() {
                            className={"btn btn-primary"}>3D View</a>
                     </div>
                 </div>
+                <hr className={styles.separationLong}/>
             </div>
         );
 }

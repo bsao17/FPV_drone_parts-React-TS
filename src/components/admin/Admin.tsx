@@ -2,12 +2,12 @@ import React from "react";
 import styles from "./signin.module.scss"
 import HeaderBanner from "../header/HeaderBanner";
 
-const Signin = () => {
+const Admin = () => {
     return (
         <div className={styles.container}>
-            <HeaderBanner title={"Signin"}/>
+            <HeaderBanner title={"Admin"}/>
         </div>
     )
 }
 
-export default Signin
+export default Admin

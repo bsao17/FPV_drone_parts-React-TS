@@ -1,0 +1,8 @@
+@mixin pictureBanner-mobile {
+  @media screen and (max-width: 400px){
+    .banner {
+      width: 200% !important;
+      height: 150px !important;
+    }
+  }
+}

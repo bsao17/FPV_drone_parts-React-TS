@@ -1,6 +1,9 @@
 @mixin navigation-mobile {
   @media screen and (max-width: 400px){
     #list {
+      position: absolute;
+      top: 250px;
+      left: 150px;
       flex-direction: column !important;
       justify-content: center !important;
       align-items: center !important;

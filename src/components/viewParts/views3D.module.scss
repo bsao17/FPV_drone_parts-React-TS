@@ -17,9 +17,10 @@
   display: block;
 
   border-radius: 50px;
-  background: #B2B2B2;
-  box-shadow: inset 20px 20px 60px #979797,
-  inset -20px -20px 60px #cdcdcd;
+  background: #949494;
+  box-shadow: inset 23px 23px 20px #515151,
+  inset -23px -23px 20px #d7d7d7,23px 23px 47px #767676,
+  -23px -23px 47px #e4e4e4;
 }
 
 #imageDark {
@@ -28,8 +29,15 @@
   display: block;
 }
 
-#separation {
-  width: 60%;
+.separation {
+  width: 5%;
+  border: solid #000 3px;
+  border-radius: 50px;
   background-color: #000;
-  border: solid white 3px;
+}
+.separationLong {
+  width: 90%;
+  border: solid #000 3px;
+  border-radius: 50px;
+  background-color: #000;
 }

@@ -1,0 +1,12 @@
+@import "../../mixin/pictureBanner-mobile/pictureBanner-mobile";
+@include pictureBanner-mobile;
+
+.banner {
+  width: 100%;
+  height: 300px;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
