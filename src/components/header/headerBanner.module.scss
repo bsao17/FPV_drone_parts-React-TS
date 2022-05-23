@@ -11,7 +11,13 @@
   margin: 0;
   padding: 0;
   background-color: #ADADAD;
+}
 
+#containerDark {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
 }
 
 .title {
@@ -21,4 +27,14 @@
   letter-spacing: 2px;
   padding: 2%;
   text-decoration: underline;
+}
+
+.titleDark {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  padding: 2%;
+  text-decoration: underline;
+  color: white;
 }

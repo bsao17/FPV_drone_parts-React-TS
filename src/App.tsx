@@ -5,10 +5,11 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Signin from "./components/signin/Signin";
 import Home from "./components/home/Home";
 import DarkButton from "./components/darkButton/DarkButton";
-import {ThemeContext} from "styled-components";
+import {DarkModeContext} from "./components/context/Context";
+
 
 function App() {
-    const context = useContext(ThemeContext)
+    const context = useContext(DarkModeContext)
     return (
         <div style={context.theme ? {backgroundColor: "#ADADAD"} : {backgroundColor: "#000000"}}>
             <BrowserRouter>
