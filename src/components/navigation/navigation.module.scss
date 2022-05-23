@@ -1,3 +1,6 @@
+@import "../../mixin/navigation-mobile/navigation-mobile";
+@include navigation-mobile;
+
 .container {
   width: 75%;
 }

@@ -1,0 +1,18 @@
+@mixin navigation-mobile {
+  @media screen and (max-width: 400px){
+    #list {
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+      width: 35% !important;
+      padding: 0 !important;
+    }
+    #listDark {
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+      width: 35% !important;
+      padding: 0 !important;
+    }
+  }
+}
