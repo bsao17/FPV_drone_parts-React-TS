@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from "react";
+import React, {useContext} from "react";
 import {DarkModeContext} from "../context/Context";
 import styles from "./darkButton.module.scss"
 import styled from "styled-components";
@@ -20,7 +20,6 @@ const DayModeButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
   border-radius: 50%;
   border: inset yellow 5px;
   margin-top: 2%;

@@ -1,30 +1,25 @@
-import React, {useContext, useEffect} from "react";
+import React, {useContext} from "react";
 import "./App.scss";
 import Video from "./components/video/Video";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Signin from "./components/signin/Signin";
-import styled from "styled-components";
 import Home from "./components/home/Home";
 import DarkButton from "./components/darkButton/DarkButton";
-
-
-const GlobalStyleDark = styled.div`
-  background-color: #000;
-  color: white;
-  margin: 0;
-  padding: 0;
-`
+import {ThemeContext} from "styled-components";
 
 function App() {
+    const context = useContext(ThemeContext)
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path={"/"} element={<Home/>}/>
-                <Route path={"/video"} element={<Video/>}/>
-                <Route path={"/signin"} element={<Signin/>}/>
-            </Routes>
-            <DarkButton/>
-        </BrowserRouter>
+        <div style={context.theme ? {backgroundColor: "#ADADAD"} : {backgroundColor: "#000000"}}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path={"/"} element={<Home/>}/>
+                    <Route path={"/video"} element={<Video/>}/>
+                    <Route path={"/signin"} element={<Signin/>}/>
+                </Routes>
+                <DarkButton/>
+            </BrowserRouter>
+        </div>
     );
 }
 
