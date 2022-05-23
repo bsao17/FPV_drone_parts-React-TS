@@ -4,13 +4,13 @@ import Home from "../home/Home";
 import DarkButton from "../darkButton/DarkButton";
 import {DarkModeContext} from "../context/Context";
 import styled from "styled-components";
+import HeaderBanner from "../header/HeaderBanner";
 
 const Video = () => {
     const context = useContext(DarkModeContext)
     return (
         <div className={styles.container}>
-            <h1>Video</h1>
-            <DarkButton/>
+            <HeaderBanner title={'Video'}/>
         </div>
     )
 }

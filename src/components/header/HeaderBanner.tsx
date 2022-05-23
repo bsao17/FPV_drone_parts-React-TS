@@ -3,8 +3,12 @@ import styles from "./headerBanner.module.scss";
 import banner from "./images/Mountains_Banner.jpg";
 import Navigation from "../navigation/Navigation";
 
-function HeaderBanner() {
-    const [title] = useState<String>("Home");
+interface props {
+    title: String
+}
+
+function HeaderBanner(props: props) {
+    const [title] = useState<String>(props.title);
     return (
         // Picture banner with title and dark button
         <div id={styles.container}>

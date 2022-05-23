@@ -5,7 +5,7 @@ import HeaderBanner from "../header/HeaderBanner";
 export default function Home(){
     return(
         <div>
-            <HeaderBanner/>
+            <HeaderBanner title={"Home"}/>
 
         </div>
     )
