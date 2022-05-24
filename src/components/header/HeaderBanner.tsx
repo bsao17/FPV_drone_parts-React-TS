@@ -4,6 +4,7 @@ import banner from "./images/Mountains_Banner.jpg";
 import Navigation from "../navigation/Navigation";
 import {DarkModeContext} from "../context/Context";
 import PictureBanner from "./PictureBanner";
+import Navigation_draggable from "../navigation_draggable/Navigation_draggable";
 
 interface props {
     title: String
@@ -23,6 +24,7 @@ function HeaderBanner(props: props) {
                 <span>{title}</span>
             </h1>
             <Navigation/>
+            <Navigation_draggable/>
         </div>
     );
 }

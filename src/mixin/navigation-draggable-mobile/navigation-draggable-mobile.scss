@@ -1,0 +1,16 @@
+@mixin navigation-draggable-mobile {
+  @media screen and (max-width: 400px){
+    .container {
+      display: initial !important;
+      position: absolute !important;
+      top: 5px !important;
+      right: 5px !important;
+      border: solid black 1px;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+    .list {
+      padding: 10px 30px 0 30px !important;
+    }
+  }
+}
