@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import styles from "./navigation_draggable.module.scss"
 import {Link} from "react-router-dom";
 
@@ -9,7 +9,7 @@ interface mousePosition {
 
 export default function Navigation_draggable(){
     const ref = useRef<HTMLDivElement>(null)
-    const [mousePos, setMousePoq] = useState<mousePosition>({
+    const [mousePos, setMousePos] = useState<mousePosition>({
         posX: "10px",
         posY: "10px"
     })
@@ -19,8 +19,19 @@ export default function Navigation_draggable(){
         ref.current.style.right = mousePos.posX;
     }
 
+    const fetchCursorPosition = (e) => {
+        setMousePos({
+            posX: e.screenX,
+            posY: e.screenY
+        })
+    }
+
+    // @ts-ignore
+    useEffect(fetchCursorPosition, [])
+
+    console.log(mousePos)
     return (
-        <div ref={ref} className={styles.container} onMouseDown={toDragWindow} draggable={true}>
+        <div ref={ref} className={styles.container} onChange={toDragWindow} draggable={true}>
             <ul className={styles.list}>
                 <li className={styles.listItem}><Link to={"/"}>Home</Link></li>
                 <li className={styles.listItem}><Link to={"/video"}>Video</Link></li>
