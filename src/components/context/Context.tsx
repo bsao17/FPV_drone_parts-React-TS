@@ -1,4 +1,4 @@
-import React, {createContext, ReactElement, useState, useCallback} from "react"
+import React, {createContext, ReactElement, useState} from "react"
 
 interface appContextInterface {
     theme: boolean,
