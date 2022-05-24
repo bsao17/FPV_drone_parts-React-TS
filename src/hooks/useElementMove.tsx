@@ -1,16 +1,11 @@
 import {useEffect, useRef, useState} from "react";
 
-export default function useElementMove(){
-    const ref = useRef<HTMLDivElement>(null)
+export default function useElementMove(ref){
+
     const [mousePos, setMousePos] = useState({
         posX: "10px",
         posY: "10px"
     })
-
-    const toDragWindow = () => {
-        ref.current.style.top = mousePos.posY;
-        ref.current.style.right = mousePos.posX;
-    }
 
     const fetchCursorPosition = (e) => {
         setMousePos({

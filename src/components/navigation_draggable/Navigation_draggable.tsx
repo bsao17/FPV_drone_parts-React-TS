@@ -9,10 +9,16 @@ interface mousePosition {
 }
 
 export default function Navigation_draggable(){
-    const moveElement = useElementMove()
-    console.log(mousePos)
+    const ref = useRef<HTMLDivElement>(null)
+    const [moveElement] = useElementMove(ref)
+
+    const toDragWindow = () => {
+        ref.current.style.top = mousePos.posY;
+        ref.current.style.right = mousePos.posX;
+    }
+
     return (
-        <div ref={ref} className={styles.container} onChange={toDragWindow} draggable={true}>
+        <div ref={ref} className={styles.container} onChange={} draggable={true}>
             <ul className={styles.list}>
                 <li className={styles.listItem}><Link to={"/"}>Home</Link></li>
                 <li className={styles.listItem}><Link to={"/video"}>Video</Link></li>
