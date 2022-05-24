@@ -11,4 +11,4 @@ root.render(
     </Context>
 );
 
-reportWebVitals(console.log);
+reportWebVitals();
