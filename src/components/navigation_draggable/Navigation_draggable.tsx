@@ -3,8 +3,8 @@ import styles from "./navigation_draggable.module.scss"
 import {Link} from "react-router-dom";
 
 interface mousePosition {
-    posX: String,
-    posY: String
+    posX: string,
+    posY: string
 }
 
 export default function Navigation_draggable(){
@@ -15,9 +15,7 @@ export default function Navigation_draggable(){
     })
 
     const toDragWindow = () => {
-        // @ts-ignore
         ref.current.style.top = mousePos.posY;
-        // @ts-ignore
         ref.current.style.right = mousePos.posX;
     }
 
