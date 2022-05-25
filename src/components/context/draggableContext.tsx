@@ -11,12 +11,12 @@ interface props {
 
 const dragWindow = React.createContext<draggableContextType | null>(null)
 
-export default function draggableContext({children}: props){
+export default function draggableContext({children}: props) {
     const initialPosition: draggableContextType = {
         posX: "10px",
         posY: "10px"
     }
-    return(
+    return (
         <dragWindow.Provider value={initialPosition}>
             {children}
         </dragWindow.Provider>
