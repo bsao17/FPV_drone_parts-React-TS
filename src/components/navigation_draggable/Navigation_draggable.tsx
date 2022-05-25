@@ -11,22 +11,22 @@ interface props {
 export default function Navigation_draggable({posX, posY}: props) {
     const ref = useRef<HTMLUListElement>(null)
 
-    function drag_handle(e){
-        e.dataTransfer.setData("text/plain", e.target.ref)
-    }
+    // @ts-ignore
+    useEffect((e) => {
 
-    useEffect(() => {
         ref.current.style.top = posY
         ref.current.style.right = posX
     }, [])
 
     return (
-        <Draggable>
-            <ul className={styles.list} ref={ref} onDragStart={drag_handle} draggable={"true"}>
-                <li className={styles.listItem}><Link to={"/"}>Home</Link></li>
-                <li className={styles.listItem}><Link to={"/video"}>Video</Link></li>
-                <li className={styles.listItem}><Link to={"/admin"}>Admin</Link></li>
-            </ul>
-        </Draggable>
+        <div className={styles.container}>
+            <Draggable>
+                <ul className={styles.list} ref={ref} draggable={true}>
+                    <li className={styles.listItem}><Link to={"/"}>Home</Link></li>
+                    <li className={styles.listItem}><Link to={"/video"}>Video</Link></li>
+                    <li className={styles.listItem}><Link to={"/admin"}>Admin</Link></li>
+                </ul>
+            </Draggable>
+        </div>
     )
 }
