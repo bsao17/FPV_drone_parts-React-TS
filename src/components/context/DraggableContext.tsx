@@ -1,4 +1,4 @@
-import React, {ReactElement} from "react"
+import React, {ReactElement, createContext} from "react"
 
 interface draggableContextType {
     posX: string,
@@ -9,9 +9,9 @@ interface props {
     children: ReactElement
 }
 
-const dragWindow = React.createContext<draggableContextType | null>(null)
+const dragWindow = createContext<draggableContextType | null>(null)
 
-export default function draggableContext({children}: props) {
+export default function DraggableContext({children}: props) {
     const initialPosition: draggableContextType = {
         posX: "10px",
         posY: "10px"
