@@ -3,13 +3,13 @@
 
 .container {
   display: none;
-  position: absolute;
-  border: solid black 1px;
-  border-radius: 5px;
-  background-color: #fff;
 }
 
 .list {
+  position: absolute;
   list-style: none;
   font-family: 'Lobster', cursive;
+  border: solid black 1px;
+  border-radius: 5px;
+  background-color: #fff;
 }
