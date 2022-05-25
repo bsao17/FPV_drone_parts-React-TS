@@ -7,24 +7,30 @@ import PictureBanner from "./PictureBanner";
 import Navigation_draggable from "../navigation_draggable/Navigation_draggable";
 
 interface props {
-    title: String
+    title: String,
 }
 
-function HeaderBanner(props: props) {
+interface windowPosition {
+    posX: string,
+    posY: string
+}
+
+function HeaderBanner({title}: props) {
+    let initialPosition: windowPosition = {
+        posX: "10px",
+        posY: "50px"
+    }
     const context = useContext(DarkModeContext)
-    const [title] = useState<String>(props.title);
+    const [initialPositionNav, setInitialPositionNav] = useState(initialPosition)
     return (
         // Picture banner with title and dark button
         <div id={ context.theme ? styles.container : styles.containerDark}>
-{/*
-            <img className={styles.banner} src={banner} alt="Banner Mountain" />
-*/}
             <PictureBanner/>
             <h1 className={ context.theme ? styles.title : styles.titleDark}>
                 <span>{title}</span>
             </h1>
             <Navigation/>
-            <Navigation_draggable/>
+            <Navigation_draggable posX={initialPositionNav.posX} posY={initialPositionNav.posY}/>
         </div>
     );
 }

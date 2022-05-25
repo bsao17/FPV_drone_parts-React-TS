@@ -2,35 +2,28 @@ import React, {useEffect, useRef, useState} from "react";
 import styles from "./navigation_draggable.module.scss"
 import {Link} from "react-router-dom";
 
-interface mousePosition {
+interface props {
     posX: string,
     posY: string
 }
 
-export default function Navigation_draggable(){
-    const currentPosition: mousePosition = {
-        posX: "10px",
-        posY: "10px"
-    }
+export default function Navigation_draggable({posX, posY}: props) {
     const ref = useRef<HTMLDivElement>(null)
-    const [mousePos, setMousePos] = useState(currentPosition)
 
-    const toDragWindow = () => {
-        ref.current.style.top = mousePos.posY;
-        ref.current.style.right = mousePos.posX;
+    function dragWindow(a, b){
+        ref.current.style.top = a
+        ref.current.style.left = b
     }
 
-    const fetchCursorPosition = (e) => {
-        setMousePos({
-            posX: e.screenX,
-            posY: e.screenY
-        })
-    }
-
-    useEffect(toDragWindow, [])
+    useEffect(()=>{
+        ref.current.style.top = posY
+        ref.current.style.left = posX
+    }, [])
 
     return (
-        <div ref={ref} className={styles.container} draggable={true}>
+        <div ref={ref} className={styles.container} onMouseUp={()=>{
+            dragWindow(posX, posY)
+        }} draggable={true}>
             <ul className={styles.list}>
                 <li className={styles.listItem}><Link to={"/"}>Home</Link></li>
                 <li className={styles.listItem}><Link to={"/video"}>Video</Link></li>
