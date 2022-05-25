@@ -1,6 +1,5 @@
 import {useContext, useState} from "react";
 import styles from "./headerBanner.module.scss";
-import banner from "./images/Mountains_Banner.jpg";
 import Navigation from "../navigation/Navigation";
 import {DarkModeContext} from "../context/Context";
 import PictureBanner from "./PictureBanner";
@@ -18,7 +17,7 @@ interface windowPosition {
 function HeaderBanner({title}: props) {
     let initialPosition: windowPosition = {
         posX: "10px",
-        posY: "50px"
+        posY: "10px"
     }
     const context = useContext(DarkModeContext)
     const [initialPositionNav, setInitialPositionNav] = useState(initialPosition)

@@ -10,20 +10,13 @@ interface props {
 export default function Navigation_draggable({posX, posY}: props) {
     const ref = useRef<HTMLDivElement>(null)
 
-    function dragWindow(a, b){
-        ref.current.style.top = a
-        ref.current.style.left = b
-    }
-
-    useEffect(()=>{
+    useEffect(() => {
         ref.current.style.top = posY
-        ref.current.style.left = posX
+        ref.current.style.right = posX
     }, [])
 
     return (
-        <div ref={ref} className={styles.container} onMouseUp={()=>{
-            dragWindow(posX, posY)
-        }} draggable={true}>
+        <div ref={ref} className={styles.container} draggable={true}>
             <ul className={styles.list}>
                 <li className={styles.listItem}><Link to={"/"}>Home</Link></li>
                 <li className={styles.listItem}><Link to={"/video"}>Video</Link></li>
