@@ -11,9 +11,7 @@ interface props {
 export default function Navigation_draggable({posX, posY}: props) {
     const ref = useRef<HTMLUListElement>(null)
 
-    // @ts-ignore
-    useEffect((e) => {
-
+    useEffect(() => {
         ref.current.style.top = posY
         ref.current.style.right = posX
     }, [])
@@ -21,7 +19,7 @@ export default function Navigation_draggable({posX, posY}: props) {
     return (
         <div className={styles.container}>
             <Draggable>
-                <ul className={styles.list} ref={ref} draggable={true}>
+                <ul className={styles.list} ref={ref} draggable={"true"}>
                     <li className={styles.listItem}><Link to={"/"}>Home</Link></li>
                     <li className={styles.listItem}><Link to={"/video"}>Video</Link></li>
                     <li className={styles.listItem}><Link to={"/admin"}>Admin</Link></li>
