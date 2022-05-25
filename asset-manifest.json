@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.680078b8.css",
-    "main.js": "./static/js/main.eaddeab4.js",
+    "main.css": "./static/css/main.80246c70.css",
+    "main.js": "./static/js/main.a91b7e6a.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/Mountains_Banner.jpg": "./static/media/Mountains_Banner.30b5d0e684be78f41d25.jpg",
     "static/media/FPV2-support_2022.png": "./static/media/FPV2-support_2022.89abe232738e6fac424d.png",
     "static/media/FPV-support_2022.png": "./static/media/FPV-support_2022.0dd1b4ebfc1140df5815.png",
     "index.html": "./index.html",
-    "main.680078b8.css.map": "./static/css/main.680078b8.css.map",
-    "main.eaddeab4.js.map": "./static/js/main.eaddeab4.js.map",
+    "main.80246c70.css.map": "./static/css/main.80246c70.css.map",
+    "main.a91b7e6a.js.map": "./static/js/main.a91b7e6a.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.680078b8.css",
-    "static/js/main.eaddeab4.js"
+    "static/css/main.80246c70.css",
+    "static/js/main.a91b7e6a.js"
   ]
 }
