@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import {DarkModeContext} from "../context/Context";
+import {DarkModeContext} from "../context/darkContext";
 import styles from "./darkButton.module.scss"
 import styled from "styled-components";
 

@@ -2,7 +2,7 @@ import React, {useContext} from "react"
 import styles from "./views3D.module.scss"
 import support from "./images/FPV-support_2022.png"
 import support2 from "./images/FPV2-support_2022.png"
-import {DarkModeContext} from "../context/Context";
+import {DarkModeContext} from "../context/darkContext";
 
 function Views3D() {
     const context = useContext(DarkModeContext)

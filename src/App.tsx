@@ -5,7 +5,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Admin from "./components/admin/Admin";
 import Home from "./components/home/Home";
 import DarkButton from "./components/darkButton/DarkButton";
-import {DarkModeContext} from "./components/context/Context";
+import {DarkModeContext} from "./components/context/darkContext";
 
 
 function App() {

@@ -11,7 +11,7 @@ interface props {
     children: ReactElement
 }
 
-export default function Context({children}: props) {
+export default function DarkContext({children}: props) {
     const [theme, setTheme] = useState<boolean>(true)
     const toggleTheme = () => {
         setTheme(!theme)

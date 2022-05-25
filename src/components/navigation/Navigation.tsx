@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import {Link} from "react-router-dom";
-import {DarkModeContext} from "../context/Context";
+import {DarkModeContext} from "../context/darkContext";
 import styles from "./navigation.module.scss"
 
 export default function Navigation() {
