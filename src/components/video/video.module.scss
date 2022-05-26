@@ -1,6 +1,17 @@
 .frame {
   width: 40vw;
-  margin: 20px;
+  margin: 15px;
+  padding: 10px;
+  border: solid white 5px;
+  background-color: #000000;
+}
+
+.frameDark {
+  width: 40vw;
+  margin: 15px;
+  padding: 10px;
+  border: solid black 5px;
+  background-color: #FFFFFF;
 }
 
 .videoTitle {
