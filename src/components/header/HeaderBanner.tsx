@@ -4,25 +4,13 @@ import Navigation from "../navigation/Navigation";
 import {DarkModeContext} from "../context/darkContext";
 import PictureBanner from "./PictureBanner";
 import Navigation_draggable from "../navigation_draggable/Navigation_draggable";
-import {dragWindow} from "../context/DraggableContext";
 
 interface props {
     title: String,
 }
 
-interface positionNavWindow {
-    posX: string,
-    posY: string
-}
-
 function HeaderBanner({title}: props) {
-    const dragContext = useContext(dragWindow)
-    let initialPosition: positionNavWindow = {
-        posX: dragContext.posX,
-        posY: dragContext.posY
-    }
     const darkContext = useContext(DarkModeContext)
-    const [initialPositionNav, setInitialPositionNav] = useState(initialPosition)
     return (
         <div id={darkContext.theme ? styles.container : styles.containerDark}>
             <PictureBanner/>

@@ -12,8 +12,9 @@
   border: solid black 1px;
   border-radius: 5px;
   background-color: #fff;
+  z-index: 999999;
 }
 li {
-  z-index: 999;
   margin: 10px 20px 10px 20px;
+  cursor: pointer;
 }

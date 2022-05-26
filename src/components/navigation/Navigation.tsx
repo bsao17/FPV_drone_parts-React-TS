@@ -14,7 +14,7 @@ export default function Navigation() {
                     to={"/"}>Home</Link></li>
                 <li className={styles.itemList}><Link
                     style={context.theme ? {color: "black"} : {color: "white", textShadow: "1px 1px 1px black"}}
-                    to={"/video"}>Video</Link></li>
+                    to={"/video"}>Vidéos</Link></li>
                 <li className={styles.itemList}><Link
                     style={context.theme ? {color: "black"} : {color: "white", textShadow: "1px 1px 1px black"}}
                     to={"/admin"}>Admin</Link></li>

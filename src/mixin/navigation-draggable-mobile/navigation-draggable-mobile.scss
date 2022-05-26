@@ -1,7 +1,7 @@
 @mixin navigation-draggable-mobile {
   @media screen and (max-width: 400px){
     .container {
-      display: initial !important;
+      display: block !important;
 
     }
     .list {
