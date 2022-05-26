@@ -32,7 +32,7 @@ function HeaderBanner({title}: props) {
             {/* Navigation window, desktop screen display */}
             <Navigation/>
             {/* Navigation window, mobile responsive screen display */}
-            <Navigation_draggable posX={initialPositionNav.posX} posY={initialPositionNav.posY}/>
+            <Navigation_draggable/>
         </div>
     );
 }

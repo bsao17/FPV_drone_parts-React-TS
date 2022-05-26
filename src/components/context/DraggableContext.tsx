@@ -18,7 +18,10 @@ export default function DraggableContext({children}: props) {
     }
     const [positionState, setPositionState] = useState(initialPosition)
     const dragWindowOnMouseMove = (e) => {
-        setPositionState({posX: initialPosition.posX = e.pageX, posY: initialPosition.posY = e.pageY}
+        setPositionState({
+                posX: initialPosition.posX = e.pageX,
+                posY: initialPosition.posY = e.pageY
+            }
         )
     }
     return (
