@@ -59,6 +59,16 @@ const Video = () => {
                         allowFullScreen>
                     </iframe>
                 </div>
+                <div>
+                    <h5 className={context.theme ? styles.videoTitle : styles.videoTitleDark}>5' - FPV</h5>
+                    <iframe
+                        className={context.theme ? styles.frame : styles.frameDark}
+                        width="560" height="315" src="https://www.youtube.com/embed/mifz_wJKJsE"
+                        title="YouTube video player" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen>
+                    </iframe>
+                </div>
             </section>
         </div>
     )
