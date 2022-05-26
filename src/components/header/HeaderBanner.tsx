@@ -14,13 +14,13 @@ function HeaderBanner({title}: props) {
     return (
         <div id={darkContext.theme ? styles.container : styles.containerDark}>
             <PictureBanner/>
-            <h1 className={darkContext.theme ? styles.title : styles.titleDark}>
-                <span>{title}</span>
-            </h1>
             {/* Navigation window, desktop screen display */}
             <Navigation/>
             {/* Navigation window, mobile responsive screen display */}
             <Navigation_draggable/>
+            <h1 className={darkContext.theme ? styles.title : styles.titleDark}>
+                <span>{title}</span>
+            </h1>
         </div>
     );
 }

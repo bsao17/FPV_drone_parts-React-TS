@@ -10,7 +10,7 @@ const Video = () => {
             <HeaderBanner title={'Vidéos'}/>
             <section className={"d-flex flex-wrap justify-content-center align-items-center"}>
                 <div>
-                    <h5 className={styles.videoTitle}>DJI Mavic mini</h5>
+                    <h5 className={context.theme ? styles.videoTitle : styles.videoTitleDark}>DJI Mavic mini</h5>
                     <iframe
                         className={styles.frame}
                         width="560" height="315" src="https://www.youtube.com/embed/5XkVJ2X2ndE"
@@ -20,7 +20,7 @@ const Video = () => {
                     </iframe>
                 </div>
                 <div>
-                    <h5 className={styles.videoTitle}>5'- FPV</h5>
+                    <h5 className={context.theme ? styles.videoTitle : styles.videoTitleDark}>5'- FPV</h5>
                     <iframe
                         className={styles.frame}
                         width="560" height="315" src="https://www.youtube.com/embed/YGOVhIlmBwo"
@@ -30,7 +30,7 @@ const Video = () => {
                     </iframe>
                 </div>
                 <div>
-                    <h5 className={styles.videoTitle}>DJI Mavic mini</h5>
+                    <h5 className={context.theme ? styles.videoTitle : styles.videoTitleDark}>DJI Mavic mini</h5>
                     <iframe
                         className={styles.frame}
                         width="560" height="315" src="https://www.youtube.com/embed/nJbfpCzWEqk"
@@ -40,7 +40,7 @@ const Video = () => {
                     </iframe>
                 </div>
                 <div>
-                    <h5 className={styles.videoTitle}>5' - FPV</h5>
+                    <h5 className={context.theme ? styles.videoTitle : styles.videoTitleDark}>5' - FPV</h5>
                     <iframe
                         className={styles.frame}
                         width="560" height="315" src="https://www.youtube.com/embed/Lfu6PShJKVI"
@@ -50,7 +50,7 @@ const Video = () => {
                     </iframe>
                 </div>
                 <div>
-                    <h5 className={styles.videoTitle}>FLYHAL - FX1</h5>
+                    <h5 className={context.theme ? styles.videoTitle : styles.videoTitleDark}>FLYHAL - FX1</h5>
                     <iframe
                         className={styles.frame}
                         width="560" height="315" src="https://www.youtube.com/embed/PAiQn9_FzqU"

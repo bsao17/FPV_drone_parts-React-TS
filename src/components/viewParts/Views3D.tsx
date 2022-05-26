@@ -12,7 +12,7 @@ function Views3D() {
                 <div className={"d-flex flex-column justify-content-center align-items-center "}>
                     <img className={"mb-3"} id={context.theme ? styles.image : styles.imageDark} src={support} alt="FPV-support"/>
                     <hr className={styles.separation}/>
-                    <h3>Cam Support</h3>
+                    <h3 style={context.theme ? {color: "black"} : {color: "white"}}>Cam Support</h3>
                     <div className={styles.buttons}>
                         <a className={"btn btn-success me-3"} download={"cura GoPro modele (ver. 1.0.0)"}
                            href={"./fileSTL/FPV-support.stl"}>Donwload</a>
@@ -29,7 +29,7 @@ function Views3D() {
                 <div className={"d-flex flex-column justify-content-center align-items-center "}>
                     <img className={"mb-3"} id={context.theme ? styles.image : styles.imageDark} src={support2} alt="FPV-support"/>
                     <hr className={styles.separation}/>
-                    <h3>GoPro Support</h3>
+                    <h3 style={context.theme ? {color: "black"} : {color: "white"}}>GoPro Support</h3>
                     <div className={styles.buttons}>
                         <a className={"btn btn-success me-3"} download={"cura GoPro modele (ver. 1.0.0)"}
                            href={"./fileSTL/FPV-support.stl"}>Donwload</a>
