@@ -33,12 +33,14 @@
   border: solid #000 3px;
   border-radius: 50px;
   background-color: #000;
+  z-index: 1;
 }
 .separationLong {
   width: 90%;
   border: solid #000 3px;
   border-radius: 50px;
   background-color: #000;
+  z-index: 0;
 }
 
 .title {
