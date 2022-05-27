@@ -5,11 +5,11 @@ import {DarkModeContext} from "../context/darkContext";
 import PictureBanner from "./PictureBanner";
 import Navigation_draggable from "../navigation_draggable/Navigation_draggable";
 
-interface props {
+interface title {
     title: String,
 }
 
-function HeaderBanner({title}: props) {
+function HeaderBanner({title}: title) {
     const darkContext = useContext(DarkModeContext)
     return (
         <div id={darkContext.theme ? styles.container : styles.containerDark}>

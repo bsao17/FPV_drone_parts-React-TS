@@ -13,9 +13,14 @@ export default function Navigation_draggable() {
     }, [])
     return (
         <div className={styles.container}>
-            <Draggable>
-                <ul className={styles.list} ref={ref} draggable={true}>
-                    <li className={styles.listItem}><Link to={"/"}>Home</Link></li>
+            <Draggable handle={"#listHeader"} defaultPosition={{x: 0, y: 0}}>
+                <ul id={"dragHandle"} className={styles.list} ref={ref} draggable={true}>
+                    <table id={"listHeader"} className={styles.tableNavigation}>
+                        <thead className={styles.theadNavigation}>
+                        <tr>Click To Move Menu</tr>
+                        </thead>
+                    </table>
+                    <li id={"stl"} className={styles.listItem}><Link to={"/"}>STL Parts</Link></li>
                     <li className={styles.listItem}><Link to={"/video"}>Video</Link></li>
                     <li className={styles.listItem}><Link to={"/admin"}>Admin</Link></li>
                 </ul>

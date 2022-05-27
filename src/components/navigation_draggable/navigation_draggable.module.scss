@@ -3,18 +3,37 @@
 
 .container {
   display: none;
+  margin: 0;
 }
 
 .list {
+  width: 50%;
   position: absolute;
   list-style: none;
   font-family: 'Lobster', cursive;
   border: solid black 1px;
   border-radius: 5px;
   background-color: #fff;
-  z-index: 999999;
 }
 li {
-  margin: 10px 20px 10px 20px;
+  margin: 25px 0 10px 0;
   cursor: pointer;
+}
+
+.tableNavigation {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 10px 0 10px;
+  border-bottom: solid black 1px;
+  background-color: #040438;
+  color: white;
+}
+
+.theadNavigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
