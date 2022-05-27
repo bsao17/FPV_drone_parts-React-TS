@@ -6,7 +6,7 @@ import Views3D from "../viewParts/Views3D";
 export default function Home() {
     return (
         <div className={styles.container}>
-            <HeaderBanner title={"Home"}/>
+            <HeaderBanner title={"STL Parts"}/>
             <Views3D/>
         </div>
     )

@@ -1,5 +1,42 @@
 @import "../../mixin/navigation-mobile/navigation-mobile";
+
 @include navigation-mobile;
+
+@keyframes blinkBlue {
+  0% {
+    background: linear-gradient(#d5dffc, #5482cd, #5583ce);
+  }
+  25% {
+    background: linear-gradient(#5583ce, #d5dffc, #5583ce);
+  }
+  50% {
+    background: linear-gradient(#5583ce, #5583ce, #d5dffc);
+  }
+  75% {
+    background: linear-gradient(#5583ce, #d5dffc, #5583ce);
+  }
+  100% {
+    background: linear-gradient(#d5dffc, #5583ce, #5583ce);
+  }
+}
+
+@keyframes blinkDark {
+  0% {
+    background: linear-gradient(#c2c2c2, #464646, #464646);
+  }
+  25% {
+    background: linear-gradient(#464646, #c2c2c2, #464646);
+  }
+  50% {
+    background: linear-gradient(#464646, #464646, #c2c2c2);
+  }
+  75% {
+    background: linear-gradient(#464646, #c2c2c2, #464646);
+  }
+  100% {
+    background: linear-gradient(#c2c2c2, #464646, #464646);
+  }
+}
 
 .container {
   width: 75%;
@@ -15,8 +52,7 @@
   font-size: 1.5rem;
   width: 100%;
   margin: auto auto 20px;
-  border-bottom: black solid 1px;
-  background: linear-gradient( #3C75CF, #FFFFFF, #3C75CF) ;
+  animation: blinkBlue 1s infinite;
 }
 
 #listDark {
@@ -29,10 +65,13 @@
   font-size: 1.5rem;
   width: 100%;
   margin: auto auto 20px;
-  background: linear-gradient( #464646, #FFFFFF, #464646);
+  animation: blinkDark 1s infinite ease-in-out;
 }
 
 a {
   text-decoration: none;
-  color: #000000;
+}
+
+.itemList {
+  text-shadow: white 1px 1px 2px;
 }

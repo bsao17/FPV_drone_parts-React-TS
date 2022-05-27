@@ -12,7 +12,7 @@ function Views3D() {
         <div className={styles.container}>
             {/* Part One*/}
             <div className={"d-flex flex-column justify-content-center align-items-center "}>
-                <h3 style={context.theme ? {color: "black"} : {color: "white"}}>Cam Support</h3>
+                <h3 className={context.theme ? styles.title : styles.titleDark}>Cam Support</h3>
                 <br/>
                 <img className={"mb-3"} id={context.theme ? styles.image : styles.imageDark} src={support}
                      alt="FPV-support"/>
@@ -29,7 +29,7 @@ function Views3D() {
 
             {/* Part Two*/}
             <div className={"d-flex flex-column justify-content-center align-items-center "}>
-                <h3 style={context.theme ? {color: "black"} : {color: "white"}}>GoPro Support</h3>
+                <h3 className={context.theme ? styles.title : styles.titleDark}>GoPro Support</h3>
                 <br/>
                 <img className={"mb-3"} id={context.theme ? styles.image : styles.imageDark} src={support2}
                      alt="FPV-support"/>
@@ -43,7 +43,7 @@ function Views3D() {
             </div>
             <hr className={styles.separationLong}/>
             <div className={"d-flex flex-column justify-content-center align-items-center "}>
-                <h3 style={context.theme ? {color: "black"} : {color: "white"}}>All Cam Support</h3>
+                <h3 className={context.theme ? styles.title : styles.titleDark}>All Cam Support</h3>
                 <br/>
                 <img className={"mb-3"} id={context.theme ? styles.image : styles.imageDark} src={support3}
                      alt="FPV-support"/>
@@ -55,7 +55,7 @@ function Views3D() {
                 <hr className={styles.separationLong}/>
             </div>
             <div className={"d-flex flex-column justify-content-center align-items-center "}>
-                <h3 style={context.theme ? {color: "black"} : {color: "white"}}>All Cam Support</h3>
+                <h3 className={context.theme ? styles.title : styles.titleDark}>All Cam Support</h3>
                 <br/>
                 <img className={"mb-3"} id={context.theme ? styles.image : styles.imageDark} src={support4}
                      alt="FPV-support"/>
