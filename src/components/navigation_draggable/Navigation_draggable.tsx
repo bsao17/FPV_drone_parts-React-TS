@@ -17,7 +17,7 @@ export default function Navigation_draggable() {
                 <ul id={"dragHandle"} className={styles.list} ref={ref} draggable={true}>
                     <table id={"listHeader"} className={styles.tableNavigation}>
                         <thead className={styles.theadNavigation}>
-                        <tr>Click To Move Menu</tr>
+                        <tr>Click here To Move Menu</tr>
                         </thead>
                     </table>
                     <li id={"stl"} className={styles.listItem}><Link to={"/"}>STL Parts</Link></li>
