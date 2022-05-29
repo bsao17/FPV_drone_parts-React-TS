@@ -4,6 +4,9 @@ import Navigation from "../navigation/Navigation";
 import {DarkModeContext} from "../context/darkContext";
 import PictureBanner from "./PictureBanner";
 import Navigation_draggable from "../navigation_draggable/Navigation_draggable";
+import {BsFileEarmarkPdfFill} from "react-icons/bs"
+import {FaVideo} from "react-icons/fa"
+import {RiAdminFill} from "react-icons/ri"
 
 interface title {
     title: String,
@@ -14,10 +17,11 @@ function HeaderBanner({title}: title) {
     return (
         <div id={darkContext.theme ? styles.container : styles.containerDark}>
             <PictureBanner/>
-            {/* Navigation window, desktop screen display */}
+            {/* responsive Navigation window, display on desktop screen */}
             <Navigation/>
-            {/* Navigation window, mobile responsive screen display */}
-            <Navigation_draggable/>
+            {/* responsive Navigation window, display on mobile screen */}
+            {/*@ts-ignore*/}
+            <Navigation_draggable stl={BsFileEarmarkPdfFill()} video={FaVideo()} admin={RiAdminFill()}/>
             <h1 className={darkContext.theme ? styles.title : styles.titleDark}>
                 <span>{title}</span>
             </h1>

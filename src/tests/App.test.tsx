@@ -2,12 +2,12 @@ import React from "react";
 import { render } from "@testing-library/react";
 import App from "../App";
 
-describe("should testing Home component", () => {
+describe("should testing STLParts component", () => {
   beforeEach(() => {
     // eslint-disable-next-line testing-library/no-render-in-setup
     render(<App />);
   });
-  test("should verify home component is called", () => {
+  test("should verify stlParts component is called", () => {
     function forEach(items: number[], callback: Function) {
       for (let index = 0; index < items.length; index++) {
         callback(items[index]);

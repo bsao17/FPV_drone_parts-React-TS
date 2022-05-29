@@ -3,9 +3,12 @@ import "./App.scss";
 import Video from "./components/video/Video";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Admin from "./components/admin/Admin";
-import Home from "./components/home/Home";
+import STLParts from "./components/stlParts/STLParts";
 import DarkButton from "./components/darkButton/DarkButton";
 import {DarkModeContext} from "./components/context/darkContext";
+
+// High Order Component
+const WrappedHOC = (Component) => () => (<Component/>)
 
 
 function App() {
@@ -14,7 +17,7 @@ function App() {
         <div style={context.theme ? {backgroundColor: "#ADADAD"} : {backgroundColor: "#000000"}}>
             <BrowserRouter>
                 <Routes>
-                    <Route path={"/"} element={<Home/>}/>
+                    <Route path={"/"} element={<STLParts/>}/>
                     <Route path={"/video"} element={<Video/>}/>
                     <Route path={"/admin"} element={<Admin/>}/>
                 </Routes>
@@ -24,5 +27,5 @@ function App() {
     );
 }
 
-export default App;
+export default WrappedHOC(App);
 

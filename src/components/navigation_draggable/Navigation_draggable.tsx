@@ -1,10 +1,17 @@
-import React, {useContext, useEffect, useRef} from "react";
+import React, {ReactElement, useContext, useEffect, useRef} from "react";
 import styles from "./navigation_draggable.module.scss"
 import {Link} from "react-router-dom";
 import {dragWindow} from "../context/DraggableContext";
 import Draggable from 'react-draggable';
+import {IconType} from "react-icons/lib";
 
-export default function Navigation_draggable() {
+interface props {
+    stl: ReactElement,
+    video: ReactElement,
+    admin: ReactElement
+}
+
+export default function Navigation_draggable({stl, video, admin}: props) {
     const dragContext = useContext(dragWindow)
     const ref = useRef<HTMLUListElement | null>(null)
     useEffect(() => {
@@ -20,9 +27,9 @@ export default function Navigation_draggable() {
                         <tr><th>Click here To Move Menu</th></tr>
                         </thead>
                     </table>
-                    <li id={"stl"} className={styles.listItem}><Link to={"/"}>STL Parts</Link></li>
-                    <li className={styles.listItem}><Link to={"/video"}>Video</Link></li>
-                    <li className={styles.listItem}><Link to={"/admin"}>Admin</Link></li>
+                    <li id={"stl"} className={styles.listItem}><Link to={"/"}>{stl} STL Parts</Link></li>
+                    <li className={styles.listItem}><Link to={"/video"}>{video} Video</Link></li>
+                    <li className={styles.listItem}><Link to={"/admin"}>{admin} Admin</Link></li>
                 </ul>
             </Draggable>
         </div>
