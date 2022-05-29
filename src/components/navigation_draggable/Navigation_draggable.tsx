@@ -3,7 +3,7 @@ import styles from "./navigation_draggable.module.scss"
 import {Link} from "react-router-dom";
 import {dragWindow} from "../context/DraggableContext";
 import Draggable from 'react-draggable';
-import {IconType} from "react-icons/lib";
+import {LogoContext} from "../context/ContexNavigationLogo";
 
 interface props {
     stl: ReactElement,
@@ -13,6 +13,7 @@ interface props {
 
 export default function Navigation_draggable({stl, video, admin}: props) {
     const dragContext = useContext(dragWindow)
+    const context = useContext(LogoContext)
     const ref = useRef<HTMLUListElement | null>(null)
     useEffect(() => {
         ref.current.style.top = dragContext.posY
@@ -24,12 +25,29 @@ export default function Navigation_draggable({stl, video, admin}: props) {
                 <ul id={"dragHandle"} className={styles.list} ref={ref} draggable={true}>
                     <table id={"listHeader"} className={styles.tableNavigation}>
                         <thead className={styles.theadNavigation}>
-                        <tr><th>Click here To Move Menu</th></tr>
+                        <tr>
+                            <th>Click here To Move Menu</th>
+                        </tr>
                         </thead>
                     </table>
-                    <li id={"stl"} className={styles.listItem}><Link to={"/"}>{stl} STL Parts</Link></li>
-                    <li className={styles.listItem}><Link to={"/video"}>{video} Video</Link></li>
-                    <li className={styles.listItem}><Link to={"/admin"}>{admin} Admin</Link></li>
+                    <li id={"stl"} className={styles.listItem}>
+                        <Link to={"/"}>
+                            <span>{context.pageStl ? stl : ""}</span>
+                             - Parts
+                        </Link>
+                    </li>
+                    <li className={styles.listItem}>
+                        <Link to={"/video"}>
+                            <span>{context.pageVideo ? video : ""}</span>
+                            - Video
+                        </Link>
+                    </li>
+                    <li className={styles.listItem}>
+                        <Link to={"/admin"}>
+                            <span>{context.pageAdmin ? admin : ""}</span>
+                            - Admin
+                        </Link>
+                    </li>
                 </ul>
             </Draggable>
         </div>
