@@ -32,20 +32,20 @@ export default function Navigation_draggable({stl, video, admin}: props) {
                     </table>
                     <li id={"stl"} className={styles.listItem}>
                         <Link to={"/"}>
-                            <span>{context.pageStl ? stl : ""}</span>
-                             - Parts
+                            <span className={"me-2 text-danger"}>{context.pageStl && stl}</span>
+                             STL-Parts
                         </Link>
                     </li>
                     <li className={styles.listItem}>
                         <Link to={"/video"}>
-                            <span>{context.pageVideo ? video : ""}</span>
-                            - Video
+                            <span className={"me-2 text-danger"}>{context.pageVideo && video}</span>
+                            Videos
                         </Link>
                     </li>
                     <li className={styles.listItem}>
                         <Link to={"/admin"}>
-                            <span>{context.pageAdmin ? admin : ""}</span>
-                            - Admin
+                            <span className={"me-2 text-danger"}>{context.pageAdmin && admin}</span>
+                            Admin
                         </Link>
                     </li>
                 </ul>
